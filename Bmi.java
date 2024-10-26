@@ -10,22 +10,22 @@ package BmiApp;
  */
 public class Bmi {
 
-    float berat;
-    float tinggi;
+    double berat;
+    double tinggi;
     String jenisKelamin;
 
-    public Bmi(float berat, float tinggi) {
+    public Bmi(double berat, double tinggi) {
         this.berat = berat;
         this.tinggi = tinggi;
     }
 
-    public float hitung() {
-        float meter = tinggi / 100;
+    public double hitung() {
+        double meter = tinggi / 100;
         return berat / (meter * meter);
     }
 
     public String getStatus() {
-        float bmi = hitung();
+        double bmi = hitung();
         if (bmi < 18.5) {
             return "Kurus";
         } else if (bmi < 24.9) {
@@ -38,7 +38,7 @@ public class Bmi {
     }
 
     public void getHasil(int pilihanKelamin) {
-        float bmi = hitung();
+        double bmi = hitung();
         System.out.println("\n======== Hasil BMI =========");
         jenisKelamin = switch (pilihanKelamin) {
             case 1 ->

@@ -29,10 +29,10 @@ public class BmiBeraksi {
             int pilihanKelamin = input.nextInt();
 
             System.out.print("Masukkan tinggi badan (cm): ");
-            float tinggi = input.nextFloat();
+            double tinggi = input.nextDouble();
 
             System.out.print("Masukkan berat badan (kg): ");
-            float berat = input.nextFloat();
+            double berat = input.nextDouble();
 
             Bmi bmi = new Bmi(berat, tinggi);
             bmi.getHasil(pilihanKelamin);

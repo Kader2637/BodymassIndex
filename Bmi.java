@@ -12,7 +12,6 @@ public class Bmi {
 
     double berat;
     double tinggi;
-    String jenisKelamin;
 
     public Bmi(double berat, double tinggi) {
         this.berat = berat;
@@ -39,6 +38,7 @@ public class Bmi {
 
     public void getHasil(int pilihanKelamin) {
         double bmi = hitung();
+        String jenisKelamin;
         System.out.println("\n======== Hasil BMI =========");
         jenisKelamin = switch (pilihanKelamin) {
             case 1 ->

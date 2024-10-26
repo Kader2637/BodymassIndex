@@ -12,4 +12,4 @@ Aplikasi BMI ini dirancang untuk menghitung Indeks Massa Tubuh (BMI) pengguna be
 
 ## Cara Menggunakan
 1. Clone repositori ini ke mesin lokal Anda.
-   git clone https://github.com/username/repository-name.git](https://github.com/Kader2637/BodymassIndex-BMI-.git)
+   git clone https://github.com/Kader2637/BodymassIndex.git

@@ -35,7 +35,7 @@ public class BmiBeraksi {
             double berat = input.nextDouble();
 
             Bmi bmi = new Bmi(berat, tinggi);
-            bmi.getHasil(pilihanKelamin);
+            bmi.tampilkanHasil(pilihanKelamin);
 
             System.out.print("\nApakah Anda ingin menghitung ulang? (ya/tidak): ");
             String response = input.next().toLowerCase();

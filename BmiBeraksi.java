@@ -9,17 +9,18 @@ package BmiApp;
  * @author LEGION
  */
 import java.util.Scanner;
-
 public class BmiBeraksi {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         boolean hitungUlang;
+
         System.out.println("***************************");
         System.out.println("      Selamat Datang       ");
         System.out.println("      Aplikasi BMI         ");
         System.out.println("  Hitung Indeks Massa Tubuh ");
         System.out.println("***************************");
+
         do {
             System.out.println("\nJenis Kelamin: ");
             System.out.println("1. Laki-Laki");
@@ -40,7 +41,6 @@ public class BmiBeraksi {
             System.out.print("\nApakah Anda ingin menghitung ulang? (ya/tidak): ");
             String response = input.next().toLowerCase();
             hitungUlang = response.equals("ya");
-
         } while (hitungUlang);
 
         input.close();

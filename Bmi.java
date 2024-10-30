@@ -18,16 +18,19 @@ public class Bmi {
         this.tinggi = tinggi;
     }
 
-    public void tampilkanHasil(int pilihanKelamin) {
+    public double hitung() {
         double meter = tinggi / 100;
-        double bmi = berat / (meter * meter);
-        
+        return berat / (meter * meter);
+    }
+
+    public void tampilkanHasil(int pilihanKelamin) {
+        double bmi = hitung();
         String jenisKelamin = switch (pilihanKelamin) {
             case 1 -> "Laki-Laki";
             case 2 -> "Perempuan";
             default -> "Tidak valid";
         };
-        
+
         String statusKesehatan;
         if (bmi < 18.5) {
             statusKesehatan = "Kurus";
@@ -38,7 +41,7 @@ public class Bmi {
         } else {
             statusKesehatan = "Obesitas";
         }
-        
+
         System.out.println("\n======== Hasil BMI =========");
         System.out.println("Jenis Kelamin                : " + jenisKelamin);
         System.out.printf("Indeks Massa Tubuh (BMI)     : %.1f%n", bmi);

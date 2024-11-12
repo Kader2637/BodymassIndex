@@ -26,11 +26,11 @@ public class Bmi {
 
     public String setStatus() {
         double bmi = hitung();
-        if (bmi < 18.5) {
+        if (bmi <= 18.5) {
             return "Kurus";
-        } else if (bmi < 24.9) {
+        } else if (bmi <= 24.9) {
             return "Normal";
-        } else if (bmi < 27.5) {
+        } else if (bmi <= 27.5) {
             return "Berat berlebih";
         } else {
             return "Obesitas";

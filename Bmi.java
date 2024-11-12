@@ -24,7 +24,7 @@ public class Bmi {
         return berat / (meter * meter);
     }
 
-    public String getStatus() {
+    public String setStatus() {
         double bmi = hitung();
         if (bmi < 18.5) {
             return "Kurus";
@@ -50,7 +50,7 @@ public class Bmi {
         };
         System.out.println("Jenis Kelamin                : " + jenisKelamin);
         System.out.printf("Indeks Massa Tubuh (BMI)     : %.1f%n", bmi);
-        System.out.println("Status Kesehatan             : " + getStatus());
+        System.out.println("Status Kesehatan             : " + setStatus());
         System.out.println("============================");
     }
 }
